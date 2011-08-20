@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+user = User.create :email => 'gordon@primate.co.uk', :password => 'primate'
+Category.create [
+  {:name => 'Programming'}, 
+  {:name => 'Event'}, 
+  {:name => 'Travel'}, 
+  {:name => 'Music'}, 
+  {:name => 'TV'}
+  ]
