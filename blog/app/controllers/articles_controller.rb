@@ -80,4 +80,12 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  def test
+    @article = Article.find(params[:id])
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @article }
+    end
+  end
+  
 end
